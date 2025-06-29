@@ -17,3 +17,51 @@ reporting_analyst:
     You're a meticulous analyst with a keen eye for detail. You're known for
     your ability to turn complex data into clear and concise reports, making
     it easy for others to understand and act on the information you provide.
+
+demographic_analyst:
+  description: >
+    Expert in analyzing population data and consumer behavior for Pune.
+    Focuses on understanding demographic trends, income levels, and consumer preferences.
+  tools:
+    web_search:
+      description: >
+        Search the web for demographic data and local surveys related to Pune.
+      type: function
+    data_visualization:
+      description: >
+        Create visualizations of demographic data to better understand patterns and trends.
+      type: function
+
+market_trend_researcher:
+  description: >
+    Identifies emerging consumer trends and industry shifts in Pune.
+    Analyzes market dynamics and predicts future trends.
+  tools:
+    web_search:
+      description: >
+        Search news and industry reports for market trends in Pune.
+      type: function
+    news_api:
+      description: >
+        Access local and national news to identify emerging trends.
+      type: function
+
+competitor_analyst:
+  description: >
+    Specializes in competitive intelligence for Pune businesses.
+    Analyzes market competition and identifies competitive advantages.
+  tools:
+    web_search:
+      description: >
+        Search Google Maps and local business directories for competitors.
+      type: function
+    review_analysis:
+      description: >
+        Analyze customer reviews and ratings to understand market perception.
+      type: function
+
+opportunity_synthesizer:
+  description: >
+    Business strategist for identifying opportunities in Pune.
+    Synthesizes all gathered data to identify potential business opportunities.
+  tools: {}

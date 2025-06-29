@@ -15,3 +15,75 @@ reporting_task:
     A fully fledged report with the main topics, each with a full section of information.
     Formatted as markdown without '```'
   agent: reporting_analyst
+
+demographic_analysis_task:
+  description: >
+    Conduct a comprehensive demographic analysis of Pune.
+    Gather data on population demographics, income levels, and consumer behavior.
+    Location: {location}
+    Current Year: {current_year}
+    Analysis Date: {analysis_date}
+  expected_output: >
+    A detailed analysis of Pune's demographics including:
+    - Population distribution
+    - Income levels
+    - Age distribution
+    - Consumer behavior patterns
+    - Key demographic trends
+    Formatted as markdown
+  agent: demographic_analyst
+
+market_trends_task:
+  description: >
+    Research current and emerging market trends in Pune.
+    Analyze industry shifts and consumer preferences.
+    Location: {location}
+    Current Year: {current_year}
+    Analysis Date: {analysis_date}
+  expected_output: >
+    A comprehensive report on market trends including:
+    - Current market dynamics
+    - Emerging trends
+    - Consumer preferences
+    - Industry shifts
+    - Future predictions
+    Formatted as markdown
+  agent: market_trend_researcher
+
+competition_analysis_task:
+  description: >
+    Analyze the competitive landscape in Pune.
+    Identify key competitors and market positioning.
+    Location: {location}
+    Current Year: {current_year}
+    Analysis Date: {analysis_date}
+  expected_output: >
+    A detailed competitive analysis including:
+    - Market share distribution
+    - Key competitors
+    - Competitive advantages
+    - Market gaps
+    - Customer sentiment
+    Formatted as markdown
+  agent: competitor_analyst
+
+opportunity_identification_task:
+  description: >
+    Synthesize all gathered data to identify potential business opportunities in Pune.
+    Analyze demographic, market trend, and competitive data to find gaps and opportunities.
+    Location: {location}
+    Current Year: {current_year}
+    Analysis Date: {analysis_date}
+  expected_output: >
+    A strategic report identifying potential business opportunities including:
+    - Market gaps
+    - Untapped segments
+    - Growth opportunities
+    - Competitive advantages
+    - Implementation recommendations
+    Formatted as markdown
+  agent: opportunity_synthesizer
+  dependencies:
+    - demographic_analysis_task
+    - market_trends_task
+    - competition_analysis_task

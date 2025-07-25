@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cipher-agent"
+version = "0.1.0"
+description = "A CrewAI agent for Google review analysis and business improvement planning."
+authors = [
+    { name = "Your Name", email = "your@email.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "crewai",
+    "requests",
+    "textblob",
+    "python-dotenv"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

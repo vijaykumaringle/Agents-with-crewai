@@ -9,8 +9,11 @@ from spark.tools.tools import (
     web_search,
     news_api,
     review_analysis,
-    data_visualization
+    DataVisualizationTool
 )
+
+# Create an instance of the data visualization tool
+data_visualization = DataVisualizationTool()
 @CrewBase
 class Spark():
     """Spark - Business Opportunity Identifier for Pune"""

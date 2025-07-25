@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 # Import the Spark crew
-from spark.crew import Spark
+from .crew import Spark
 
 def run():
     """

@@ -23,6 +23,8 @@ Cipher/
 │   └── test_cipher_agent.py
 ├── examples/
 │   └── example_usage.py
+├── results/
+│   └── *.md (timestamped reports)
 ├── requirements.txt
 ├── pyproject.toml
 ├── .env.example
@@ -41,17 +43,25 @@ Cipher/
    pip install -e .
    ```
 3. **Set up your `.env` file:**
-   - Copy `.env.example` to `.env` and add your Google API key:
+   - Create a `.env` file in the Cipher directory and add your Google API key:
      ```env
-     GOOGLE_API_KEY=your_api_key_here
+     GOOGLE_API_KEY=your_google_api_key_here
      ```
+   - Get your API key from: https://makersuite.google.com/app/apikey
 
 ## Usage Example
-Run the example script:
+Run the Cipher agent with CrewAI:
+```bash
+python run_crew.py
+```
+This will create a CrewAI agent that can fetch reviews, analyze sentiment, extract pros and cons, and generate business improvement plans.
+
+**Results:** Each run automatically generates a timestamped markdown report in the `results/` folder.
+
+Or run the standalone example script:
 ```bash
 python examples/example_usage.py
 ```
-This will fetch reviews, analyze sentiment, extract pros and cons, and print a business improvement plan.
 
 ## Testing
 Run all tests with:

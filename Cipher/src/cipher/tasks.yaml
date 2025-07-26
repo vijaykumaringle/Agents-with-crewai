@@ -1,0 +1,8 @@
+tasks:
+  - name: Analyze Google Reviews
+    agent: CipherAgent
+    description: Fetch and analyze Google reviews for a business, extract pros/cons, and generate an improvement plan.
+    params:
+      - place_name
+      - api_key
+      - num_reviews 

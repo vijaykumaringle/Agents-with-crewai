@@ -1,0 +1,5 @@
+agents:
+  - name: CipherAgent
+    module: cipher.cipher_agent
+    class: CipherAgent
+    description: Cipher agent for Google review analysis and business improvement planning. 
